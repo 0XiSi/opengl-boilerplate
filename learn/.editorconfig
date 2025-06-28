@@ -1,0 +1,2 @@
+[*.{cpp,hpp,h}]
+cpp_new_line_before_open_brace = same_line

@@ -257,7 +257,7 @@ void calcAverageNormals(
 		vertices[in1] += normal.x; vertices[in1 + 1] += normal.y; vertices[in1 + 2] += normal.z;
 		vertices[in2] += normal.x; vertices[in2 + 1] += normal.y; vertices[in2 + 2] += normal.z;
 	}
-	for (size_t i = 0; i < vertexCount / vLength; i++) {
+	for (unsigned int i = 0; i < vertexCount / vLength; i++) {
 		unsigned int nOffset = i * vLength + normalOffset;
 		glm::vec3 vec(vertices[nOffset], vertices[nOffset + 1], vertices[nOffset + 2]);
 		vec = glm::normalize(vec);

@@ -5,6 +5,8 @@ public:
     Texture(const char* fileLoc); // Updated constructor to accept const char*  
 
     bool LoadTexture();  
+    bool LoadTextureA();
+
     void UseTexture();  
     void ClearTexture();  
 
